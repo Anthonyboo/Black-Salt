@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Средства для ухода</title>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<style type="text/css">
+	span {cursor:pointer; }
+</style>
+<script type="text/javascript" >
+$(document).ready(function() {
+    $('.minus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+    });
+    $('.plus').click(function () {
+        var $input = $(this).parent().find('input');
+        $input.val(parseInt($input.val()) + 1);
+        $input.change();
+        return false;
+    });
+});	
+</script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <ul>
+                <li id="up">ООО"Соло-Ко"</li> 
+                <!-- id="up" тут сделал для того чтобы вернуться, 
+                нажав на кнопку Наверх -->
+                <li>
+                    <figure>
+                        <a><img herf= src="" alt="Логотоп"></a>
+                    </figure>
+                </li>
+                <li>
+                    <a class="call">Заказать звонок</a>
+                </li>
+        </div>
+        <div class="container"> 
+            <nav class="main-navigation">
+                 <ul>
+                    <li><a href="">Продукция</a></li>
+                    <li><a href="">О черной соли</a></li>
+                    <li><a href="">Как мы работаем</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <main class="page-main">
+        <div class="index-content">
+            <div class="banner">
+                <div class="banner-left">
+                    <img src="">
+                    <h1>Оптовые продажи черной соли</h1>
+                    <h2>Скидки до 20%</h2>
+                    <b>8-906-522-0503</b>
+                    <a href="">Заказать</a>
+                </dif>
+                <div class="banner-right">
+                    <form>
+                        <batton class="btn" name="close">x</batton>
+                        <input type="text" placeholder="Введите имя">
+                        <input type="text" placeholder="Введите номер телефона">
+                        <input type="submit" value="Отправить">
+                        <batton>
+                    </form>
+                </div>
+            </div>
+                <div class="Catalog">
+                    <div class="up-part">
+                        <h3>Наша продукция</h3>
+                        <h4>Получите скидку 20%</h4>
+                        <h5>От общей стоимости заказа</h5>
+                    </div>
+                    <div class="mid-part">
+                        <div class="cataolg-items">
+                            <div class="product">
+                                <img src="" alt="Черная соль Четверговая" width="" height="">
+                                <h3>Черная соль "Четверговая"</h3>
+                                <span>18,70 P</span>
+                                <h4>/упаковка 98 уп в 1 коробке</h4>
+                                <h5>Введите количество коробок в партии:</h5>
+                                <div class="number">
+                                    <span class="minus">-</span>
+                                    <input type="text" value="1"/>
+                                    <span class="plus">+</span>
+                                </div>
+                                <h5><span>Вес:</span>58,8 кг</h5>
+                                <h5><span>Цена:</span>27 489р</h5>
+                            </div>
+                            <div class="product">
+                                <img src="" alt="Черная соль Четверговая" width="" height="">
+                                <h3>Черная соль "Четверговая"</h3>
+                                <span>36,75 P</span>
+                                <h4>/упаковка 82 уп в 1 коробке</h4>
+                                <h5>Введите количество коробок в партии:</h5>
+                                <div class="number">
+                                    <span class="minus">-</span>
+                                    <input type="text" value="1"/>
+                                    <span class="plus">+</span>
+                                </div>
+                                <h5><span>Вес:</span>0 кг</h5>
+                                <h5><span>Цена:</span>0 р</h5>
+                            </div>
+                            <div class="product">
+                                <img src="" alt="Черная соль Четверговая" width="" height="">
+                                <h3>Черная соль "Четверговая"</h3>
+                                <span>59,00 P</span>
+                                <h4>/упаковка 28 уп в 1 коробке</h4>
+                                <h5>Введите количество коробок в партии:</h5>
+                                <div class="number">
+                                    <span class="minus">-</span>
+                                    <input type="text" value="1"/>
+                                    <span class="plus">+</span>
+                                </div>
+                                <h5><span>Вес:</span>0 кг</h5>
+                                <h5><span>Цена:</span>0 р</h5>
+                            </div>
+                            <div class="product">
+                                <img src="" alt="Черная соль Салатная" width="" height="">
+                                <h3>Черная соль "Салатная"</h3>
+                                <span>36,75 P</span>
+                                <h4>/упаковка 82 уп в 1 коробке</h4>
+                                <h5>Введите количество коробок в партии:</h5>
+                                <div class="number">
+                                    <span class="minus">-</span>
+                                    <input type="text" value="1"/>
+                                    <span class="plus">+</span>
+                                </div>
+                                <h5><span>Вес:</span>0 кг</h5>
+                                <h5><span>Цена:</span>0 р</h5>
+                            </div>
+                            <div class="product">
+                                <img src="" alt="Черная соль Никитиская" width="" height="">
+                                <h3>Черная соль "Никитинская"</h3>
+                                <span>26,25 P</span>
+                                <h4>/упаковка 82 уп в 1 коробке</h4>
+                                <h5>Введите количество коробок в партии:</h5>
+                                <div class="number">
+                                    <span class="minus">-</span>
+                                    <input type="text" value="1"/>
+                                    <span class="plus">+</span>
+                                </div>
+                                <h5><span>Вес:</span>0 кг</h5>
+                                <h5><span>Цена:</span>0 р</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-part">
+                        <div class="bp-left">
+                            <h3>Заполните форму для оформления заказа:</h3>
+                            <form>
+                                <input type="text" placeholder="Ваше имя*" required>
+                                <input type="text" placeholder="Телефон*" required>
+                                <input type="text" placeholder="E-mail">
+                                <input type="text" placeholder="Адрес доставки*" required>
+                            </form>
+                            <h4>Выберите транспортную компанию:</h4>
+                            <select multiple name="delivery">
+                                <option value="d1" selected>Компания 1</option>
+                                <option value="d2">Компания 2</option>
+                                <option value="d3">Компания 3</option>
+                                <option value="d4">Компания 4</option>
+                                <option value="d5">Компания 5</option>
+                                <option value="d6">Самовывоз</option>
+                            </select>
+                        </div>
+                        <div class="bp-right">
+                            <h2><span>Сумма </span>27 489 Р</h2>
+                            Сумма указана без учета скидки
+                            <h2><span>Скидка </span>20 %</h2>
+                            Скидка от общей стоимости товара
+                            <ul>
+                                <ol>Вес нетто: 0 кг</ol>
+                                <ol>Вес брутто: 0 кг</ol> 
+                                <ol>Объем: 0 куб/м</ol>
+                            </ul>
+                        <h3> Итого: 27 989 Р</h3>
+                        <input type="submit" value="Отправить">
+                        </div> 
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="" alt="фоновое изображение" width="" height="">
+                    <div class="promo">
+                        <h3>Как мы работаем</h3>
+                        <div class="promobox">
+                            <h1>01</h1>
+                            <span>Вы совершаете заказ на сайте или по e-mail 
+                                и отправляете заявку нам.</span>
+                        </div>
+                        <div class="promobox">
+                            <h1>02</h1>
+                            <span>Ожидаете звонка нашего оператора.</span>
+                        </div>
+                        <div class="promobox">
+                            <h1>03</h1>
+                            <span>Подтверждаете заказ. Совершаете оплату.</span>
+                        </div>
+                        <div class="promobox">
+                            <h1>04</h1>
+                            <span>Вы забираете продукцию самостоятельно со склада 
+                                или мы доставляем ее по указанному Вами адресу.</span>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <img src="" alt="фоновое изображение" width="" height="">
+                    <div class="futures">
+                        <h3>Почему стоит выбрать нас</h3>
+                        <h5>Выгода и комфорт наших заказчиков являются для нас приоритетами, 
+                            поэтому мы всегда готовы предложить оптимальные условия сотрудничества.</h5>
+                        <div class="promobox">
+                            <figure>
+                                <img src="" alt="" width="" height="">
+                                <figcaption>Стабильность поставок</figcaption>
+                            </figure>
+                        </div>
+                        <div class="promobox">
+                            <figure>
+                                <img src="" alt="" width="" height="">
+                                <figcaption>Оперативность в обработке заявок</figcaption>
+                            </figure>
+                        </div>
+                        <div class="promobox">
+                            <h5><p>Высокое качество продукции</p></h5>
+                            <span>Мы гарантируем отличные потребительские свойства продукции, 
+                                отвечающие высочайшим стандартам качества</span>
+                        </div>
+                        <div class="promobox">
+                            <figure>
+                                <img src="" alt="" width="" height="">
+                                <figcaption>Гибкость в решении бизнес-задач</figcaption>
+                            </figure>
+                        </div>
+                        <div class="promobox">
+                            <figure>
+                                <img src="" alt="" width="" height="">
+                                <figcaption>Гарантируем лучшие цены</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="info">
+                        <h3>Полезно знать</h3>
+                        <div class="left-side">
+                            <div class="promobox">
+                                <figure>
+                                    <img src="" alt="salt" width="" height="">
+                                </figure>
+                                <h4>Как изготавливают черную соль?</h4>
+                                Производством черной соли костромская компания ООО "Соло-Ко" занимается уже более пятнадцати лет. 
+                                За основу здесь взяли старинный русский рецепт: обжигают соль с ржаной мукой на березовух поленьях. 
+                                Получается не просто экологически чистый, но и полезный продукт - уж в этом наши предки знали толк.
+                            </div>
+                            <div class="promobox">
+                                <figure>
+                                    <img src="" alt="Черная соль" width="" height="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <div class="promobox">
+                                <figure>
+                                    <img src="" alt="Котлы с солью" width="" height="">
+                                </figure>
+                            </div>
+                            <div class="promobox">
+                                <figure>
+                                    <img src="" alt="salt" width="" height="">
+                                </figure>
+                                <h4>Чем полезна черная соль?</h4>
+                                При обжиге соль лишается всех своих недостатков в виде тяжелых металлов и излишков хлора,
+                                при это обогащается кальцием и выводит из организма токсины. Кроме того, она полезна для 
+                                пищеварительной системы человека, так как не задерживает воду в организме. Да и приправлять
+                                такой солью можно абсолютно любое блюдо.
+                            </div>
+                        </div>
+                        <a href="">Заказать</a>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="futures">
+                        <h3>Где уже представлена наша продукция</h3>
+                        <h5>Мы сотрудничаем с магазинами:</h5>
+                        <div class="promobox">
+                            <figure>
+                                <img src="" alt="Высшая лига" width="" height="">
+                            </figure>
+                        </div>
+                        <div class="promobox">
+                            <figure>
+                                <img src="" alt="Магнит" width="" height="">
+                            </figure>
+                        </div>
+                        <div class="promobox">
+                            <figure>
+                                <img src="" alt="Пятерочка" width="" height="">
+                            </figure>
+                        </div>
+                        <div class="promobox">
+                            <figure>
+                                <img src="" alt="Ашан" width="" height="">
+                            </figure>
+                        </div>
+                        <div class="promobox">
+                            <figure>
+                                <img src="" alt="Дом еды" width="" height="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="map">
+                        <h3>Контакты</h3>
+                        <div class="promobox">
+                            <a href="tel:89092454447">8-909-245-4447</a>
+                            <a href="tel:89065220503">8-906-522-05-03</a>
+                            <a href="mailto:blacksalt-44@yandex.ru">blacksalt-44@yandex.ru</a>
+                        </div>
+                        <div class="promobox">
+                            <figure>
+                                <img src="" alt="Карта" width="" height="">
+                            </figure>
+                        </div>
+                        <div class="promobox">
+                            <ul>
+                                <li>
+                                    <p>Адрес производства:</p>
+                                    Костромская область, Кадыйский р-н, д. Иваньково, д.66
+                                </li>
+                                <li>
+                                    <p>Адрес Самовывоза:</p>
+                                    Костромская область, Кадыйский р-н, д. Иваньково, д.66
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container"> 
+                    <div class="up">
+                        <figure>
+                            <a href="#up">><img src="" alt="" width="" height=""></a>
+                            <figcaption>Наверх</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="container"> 
+                    <nav class="main-navigation">
+                        <ul>
+                            <li>
+                                <figure>
+                                    <a><img herf= src="" alt="Логотоп"></a>
+                                </figure>
+                            </li>
+                            <li><a href="">Продукция</a></li>
+                            <li><a href="">О черной соли</a></li>
+                            <li><a href="">Как мы работаем</a></li>
+                            <li><a href="">Контакты</a></li>
+                            <li>
+                                <a href="tel:89065220503">8-906-522-05-03</a>
+                                <a href="">Заказать звонок</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+        </div>
+        <footer class="main-footer">
+            <div class="container">
+                ООО "Соло-Ко" Политика конфидециальности
+            </div>
+        </footer>
+</body>
+</html>
